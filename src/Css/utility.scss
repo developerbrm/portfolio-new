@@ -1,0 +1,74 @@
+@import "./variables";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #2facff !important;
+  color: #000000 !important;
+  text-shadow: none;
+}
+
+.primary-font {
+  text-align: inherit;
+  color: inherit;
+  font-weight: 800;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  margin-bottom: 0.4em;
+}
+
+.secondary-font {
+  text-align: inherit;
+  color: inherit;
+  font-weight: 600;
+  font-size: clamp(1.4rem, 5vw, 2rem);
+  margin-bottom: 0.3em;
+}
+
+.tertiary-font {
+  text-align: inherit;
+  color: inherit;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 5vw, 1.4rem);
+  margin-bottom: 0.2em;
+}
+
+
+.primary-color {
+  color: $primary-normal;
+}
+
+.secondary-color {
+  color: $secondary-normal;
+}
+
+.rte {
+  font-weight: 300;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+
+  @media (max-width: 750px) {
+    font-size: 90%;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 80%;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 70%;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  color: $primary-normal;
+}
